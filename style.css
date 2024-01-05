@@ -1,0 +1,146 @@
+ 
+
+.container {
+    border: 1px solid black;
+    width: 300px;
+    height: 560px;
+    position: relative;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.chat-box::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-box {
+    height: 420px;
+    margin: 10px;
+    margin-top: 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px 0px 5px 10px;
+    overflow-y: scroll;
+    
+    background-size: cover;
+}
+
+.input {
+    /* border: 1px solid black; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 10px;
+    width: 100%;
+}
+
+.input input {
+    padding: 10px;
+    width: 200px;
+    border-radius: 30px;
+    font-size: 16px;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(139, 139, 139, 0.093) 0px 18px 36px -18px inset;
+}
+
+.input button {
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background: rgb(56, 199, 118);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+.user {
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 0;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #128C7E;
+}
+
+.user img {
+    width: 35px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.icon .bi {
+    margin-right: 10px;
+    color: white;
+}
+
+.msgPara {
+    font-size: 14px;
+    padding: 10px;
+    background: seagreen;
+    color: white;
+    border-radius: 20px 20px 2px 20px;
+    margin: 0;
+}
+
+.divStyle {
+    width: 230px;
+    display: flex;
+    margin-left: 30px;
+    margin-top: 10px;
+    /* border: 1px solid black; */
+    justify-content: end;
+}
+
+
+.botStyle {
+    width: 230px;
+    display: flex;
+    /* border: 1px solid black; */
+    margin-top: 10px;
+}
+
+.botMsgPara {
+    font-size: 14px;
+    padding: 10px;
+    background: grey;
+    color: white;
+    border-radius: 20px 20px 20px 2px;
+    margin: 0;
+}
+
+@media screen and (max-width:600px) {
+
+    body{
+        background: url('./Home-background.png');
+        background-size: cover;
+    }
+
+    .container{
+        margin-top:20%;
+        width: 320px;
+        height: 565px;
+    }
+
+    .divStyle {
+        width: 230px;
+        display: flex;
+        margin-left: 45px;
+        margin-top: 10px;
+        /* border: 1px solid black; */
+        justify-content: end;
+    }
+
+}

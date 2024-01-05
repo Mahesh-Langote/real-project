@@ -173,7 +173,9 @@ body {
 }
 @media (min-width:600px){
   .footerr{
-    display: none;
+    /* display: none; */
+    /* visibility: hidden; */
+    text-align: center;
   }
 
 

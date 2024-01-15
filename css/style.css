@@ -197,7 +197,7 @@ body {
   .con-cc{
     display: none;
   }
-  .card-img-top{display: none;}
+  .card-img-top-banner{display: none;}
 }
 @media (max-width: 1400px) {
   #gtco-main-nav::before {

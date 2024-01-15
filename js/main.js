@@ -73,3 +73,25 @@
  
 
 
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    var scrollBtn = document.getElementById("scrollBtn");
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollBtn.style.display = "block";
+    } else {
+        scrollBtn.style.display = "none";
+    }
+}
+
+function scrollToTop() {
+    var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+    if (currentPosition > 0) {
+        window.requestAnimationFrame(scrollToTop);
+        window.scrollTo(0, currentPosition - currentPosition / 8); // Adjust the 8 to control the scroll speed
+    }
+}

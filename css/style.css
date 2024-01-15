@@ -699,6 +699,23 @@ body {
   top: 25%;
   width: 100%;
 }
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#scrollBtn:hover {
+  background-color: #0056b3;
+}
 @media (max-width: 600px) {
   .gtco-news .owl-carousel .owl-nav {
     display: none !important;

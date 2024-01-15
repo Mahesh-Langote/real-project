@@ -121,7 +121,7 @@
     margin: 0;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (min-width:600px) {
 
     body{
         background: url('./Home-background.png');
